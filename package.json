@@ -23,6 +23,7 @@
     "redux-firestore": "^0.8.0",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1",
+    "tailwindcss": "^1.0.3",
     "unirest": "^0.6.0",
     "watch": "^1.0.2"
   },
