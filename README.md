@@ -10,7 +10,7 @@ npm install
 
 [ ]Find a different way to recall recipes from database
 
-[ ]Add filters work
+[ ]Add filters and make them work
 
 
 **/my-account**
