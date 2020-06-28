@@ -6415,10 +6415,6 @@ footer{
 
 /* Dashboard */
 
-.filters{
-  height: 100% !important;
-}
-
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;
