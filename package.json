@@ -29,7 +29,7 @@
   "scripts": {
     "tailwind:css": "tailwind build src/styles/index.css -c tailwind.config.js -o src/index.css",
     "start": "npm run tailwind:css && react-scripts start",
-    "build": "npm run tailwind:css && react-scripts build && npm run watch",
+    "build": "npm run tailwind:css && react-scripts build",
     "watch": "watch \"npm run build:css\" ./src",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
