@@ -67,29 +67,11 @@ class Dashboard extends Component {
       })
     }
 
-    // if (this.state.recipesToShow.length < this.state.recipes.length){
-    //   // mealsToShow = this.state.recipesToShow.filter(recipe => {
-    //   //   return recipe.checkboxes[checkbox]
-    //   // }) 
+    if (this.state.recipesToShow.length < this.state.recipes.length){
+      // mealsToShow = this.state.recipesToShow.filter(recipe => {
+      //   return recipe.checkboxes[checkbox]
+      // }) 
 
-    //   mealsToShow = []
-    //   this.state.recipesToShow.forEach(recipe => {
-    //     // find all checked boxes and create new object of just true
-    //     var checkedTrue = Object.keys(recipe.checkboxes).reduce((p, c) => {    
-    //       if (recipe.checkboxes[c]) p[c] = recipe.checkboxes[c];
-    //       return p;
-    //     }, {});
-    //     console.log("checkedTrue", Object.keys(checkedTrue))
-    //     // return recipe that matches the recipe.checkboxes and the filters checkboxes
-    //     const filters = Object.keys(checkedTrue).some(r=> checkboxes.indexOf(r) >= 0)
-    //     console.log("filters", filters)
-    //     if (filters){
-    //       mealsToShow.push(recipe)
-    //     }
-    //   })
-    //   console.log("mealsToShow", mealsToShow)
-
-    // } else {
       mealsToShow = []
       this.state.recipesToShow.forEach(recipe => {
         // find all checked boxes and create new object of just true
@@ -105,7 +87,25 @@ class Dashboard extends Component {
           mealsToShow.push(recipe)
         }
       })
-    // }
+      console.log("mealsToShow", mealsToShow)
+
+    } else {
+      mealsToShow = []
+      this.state.recipes.forEach(recipe => {
+        // find all checked boxes and create new object of just true
+        var checkedTrue = Object.keys(recipe.checkboxes).reduce((p, c) => {    
+          if (recipe.checkboxes[c]) p[c] = recipe.checkboxes[c];
+          return p;
+        }, {});
+        console.log("checkedTrue", Object.keys(checkedTrue))
+        // return recipe that matches the recipe.checkboxes and the filters checkboxes
+        const filters = Object.keys(checkedTrue).some(r=> checkboxes.indexOf(r) >= 0)
+        console.log("filters", filters)
+        if (filters){
+          mealsToShow.push(recipe)
+        }
+      })
+    }
     this.setState({ 
         recipesToShow: mealsToShow,
         checkboxes: checkboxes 
