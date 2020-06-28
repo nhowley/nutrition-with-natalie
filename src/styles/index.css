@@ -1,0 +1,753 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Your custom CSS here */
+
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.font-oleo{
+  font-family: 'Oleo Script', cursive;
+}
+
+.w-40{
+width: 40px;
+ }
+
+.w-80{
+  width:80px;
+}
+
+.w-120{
+  width:120px;
+}
+ 
+.h-80{
+  height: 80px;
+}
+
+.h-120{
+  height:120px;
+}
+
+.object-fit{
+  object-fit: cover;
+}
+
+.transform-translate-center{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px){
+  .lg\:logo-transform-translate{
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+
+.hide input[type=file]{
+  display:none;
+  }
+  
+.dietary input[type="checkbox"]:checked + label{
+  background-color: #ffd0d6;
+}
+
+.collection-item input[type="checkbox"]:checked + label{
+  text-decoration: line-through;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1800px;
+  }
+}
+
+.rounded-50{
+  border-radius: 50%;
+}
+
+.option-highlight{
+  @apply bg-teal rounded-50 p-2;
+}
+
+.button-teal{
+  @apply bg-teal text-white py-1 px-4;
+}
+
+/* FORM STYLING */
+.dot, .dot-move{
+  @apply rounded-50
+}
+
+.dot{
+  height:14px;
+  width:14px;
+  margin-top: -3px;
+  transition: .3s all ease;
+  transform: translate(-16.7%, -16.7%);
+  @apply absolute rounded-50 border-blue; 
+}
+
+#dot-two{
+  margin-left:16.7%;
+}
+
+#dot-three{
+  margin-left:33.4%;
+}
+
+#dot-four{
+  margin-left:50.1%;
+}
+
+#dot-five{
+  margin-left:66.8%;
+}
+
+#dot-six{
+  margin-left:83.4%;
+}
+
+#dot-seven{
+  margin-left:99.9%;
+}
+
+
+/* Macros */
+.macro-result{
+  @apply rounded-50 border bg-white w-80 h-80 relative mr-2;
+}
+
+.macro-text{
+  @apply absolute transform-translate-center text-2xl text-center;
+}
+
+.macro-result{
+  @apply text-center text-sm mt-2
+}
+
+/* Radio Input - Macro calc form */
+.gender,
+.goal{
+    padding:30px;
+    transition: all .2s ease-in-out; 
+}
+
+.gender input:checked + img,
+.goal input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  transform:scale(1.2);
+}
+
+.transform-120:hover{
+  transform: scale(1.2);
+  cursor:pointer;
+}
+
+/* Slick slider */
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: pink;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    width: 100%;
+    height: 100%;
+    min-height: 1px;
+    background: pink;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Navbar */
+.logo-navbar{
+  width: 200px;
+}
+
+/* Individual Recipes */
+
+/* .dietary-req-boxes{
+  display: flex;
+  justify-content: space-around;
+} */
+
+.recipe-info{
+  height: 100%;
+}
+
+/* Recipe summary */
+.card-icons{
+  display: flex;
+  align-items: center;
+}
+
+
+.recipe-actions{
+  margin-top: 5px;
+}
+
+.recipe-img{
+  height: 277px;
+}
+
+.recipe-title{
+  line-height: 120%;
+}
+
+.recipe-card{
+  min-height: 520px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    bottom: 0;
+}
+
+/* Homepage */
+
+.home-cover{
+  width: 100vw;
+  background-image:linear-gradient(to bottom, rgba(58, 49, 43, 0.7), rgba(58, 49, 43, 0.7)), url("https://res.cloudinary.com/dnb2crtgo/image/upload/v1589992833/homepage_cover.png");
+  background-size: cover;
+  position: relative;
+  height: 600px;
+}
+
+.home-hl{
+  line-height: 120%;
+}
+
+.features{
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.feature{
+  padding: 20px;
+}
+
+.feature-img{
+  width:65px;
+  height:65px;
+}
+
+.feature-text{
+  margin-left: 20px;
+}
+
+.meet-coach, .is-it-right{
+  background-color: #efefef;
+}
+
+.coach-img{
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+  .coach-img{
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .coach-img{
+    justify-content: flex-end;
+  }
+}
+
+.natalie{
+  width: 500px;
+}
+
+.precision-badge{
+  width:200px;
+}
+
+
+@media only screen and (max-width: 599px) {
+  .precision-vid{
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .precision-vid{
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  .precision-vid{
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.vid-hl{
+  margin: 0 auto;
+  margin-top:20px;
+}
+
+.program-details{
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.checklist{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 900px) {
+  .checklist{
+    width: 65%;
+  }
+}
+
+.purple-check{
+  width: 50px;
+  height: 50px;
+}
+
+.price-plan{
+  padding: 40px 25px;
+  background-color: #efefef;
+  margin: 0px 20px 20px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .price-plan{
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .price-plan{
+    
+    margin: 0px;
+    margin-left: 20px;
+  }
+}
+
+.blue-check{
+  width: 25px;
+  height: 25px;
+}
+
+.extras-1,
+.extras-2{
+  background-color: #efefef;
+}
+
+.pricing-contact{
+  margin: 0 auto;
+}
+
+.close-contact{
+  width:20px;
+  height: 20px;
+  right:20px;
+}
+
+.contact-overlay{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.more-nutr-info :nth-child(1) { order: 1; }
+.more-nutr-info :nth-child(2) { order: 2; }
+.more-nutr-info :nth-child(3) { order: 4; }
+.more-nutr-info :nth-child(4) { order: 3; }
+
+@media only screen and (min-width: 600px) {
+.more-nutr-info :nth-child(3) { order: 3; }
+.more-nutr-info :nth-child(4) { order: 4; }
+}
+
+
+.more-nutr{
+  height:350px;
+}
+
+@media only screen and (min-width: 600px) {
+  .more-nutr{
+    height:auto;
+  }
+}
+
+
+/* Buttons */
+
+.primary{
+  background-color: #90708C;
+  color: white;
+  padding: 5px 45px;
+}
+
+/* Navbar */
+
+.mobile-nav{
+  height:100vh;
+}
+
+/* Macros page */
+
+.macro-img{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Results page */
+.results-header{
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Inidividual recipe */
+.mail-icon{
+  width: 32px;
+  height:32px;
+}
+
+/* Dashboard */

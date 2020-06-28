@@ -1,0 +1,64 @@
+{
+  "name": "tailwind-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^6.2.2",
+    "firebase-admin": "^8.3.0",
+    "nodemailer": "^6.4.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-pdf-print": "^0.1.9",
+    "react-redux": "^5.1.1",
+    "react-redux-firebase": "^2.2.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.4.1",
+    "react-slick": "^0.24.0",
+    "react-social-share-buttons": "^1.0.2",
+    "redux": "^4.0.1",
+    "redux-firestore": "^0.8.0",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "unirest": "^0.6.0",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "tailwind:css": "tailwind build src/styles/index.css -c tailwind.config.js -o src/index.css",
+    "start": "npm run tailwind:css && react-scripts start",
+    "build": "npm run tailwind:css && react-scripts build && npm run watch",
+    "watch": "watch \"npm run build:css\" ./src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss-cli": "^6.1.2",
+    "tailwindcss": "^1.0.3"
+  },
+  "description": "npm install",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
