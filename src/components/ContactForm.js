@@ -22,7 +22,7 @@ class ContactMe extends Component {
     console.log("state", this.state)
     axios({
         method: "POST", 
-        url:"http://localhost:3002/send", 
+        url: `${process.env.URL} + "/send"`, 
         data:  this.state
       }).then((response)=>{
         if (response.data.status === 'success'){
