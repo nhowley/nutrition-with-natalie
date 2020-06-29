@@ -55,7 +55,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+// const PORT = 3000;
+// app.listen(PORT, () => {
+//     console.log(`Our app is running on port ${ PORT }`);
+// });
