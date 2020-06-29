@@ -7,6 +7,8 @@ import Feature from './home/Feature'
 // const large = '/img/home_head-visual_cropped_2.jpg';
 // const xlarge = '/img/home_head-visual_cropped_2.jpg';
 
+console.log(process.env.API_KEY)
+
 const Home = (props) => {
   return(
     <div>
