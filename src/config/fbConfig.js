@@ -6,7 +6,8 @@
     apiKey: `${process.env.API_KEY}`,
     authDomain: `${process.env.authDomain}`,
     databaseURL: `${process.env.databaseURL}`,
-    projectId: `${process.env.projectId}`,
+    projectId: "recipe-site-68898",
+    storageBucket: `${process.env.storageBucket}`,
     messagingSenderId: `${process.env.messagingSenderId}`,
     appId: `${process.env.appId}`
   };
