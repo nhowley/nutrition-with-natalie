@@ -35,7 +35,6 @@
     "build": "npm run tailwind:css && react-scripts build",
     "watch": "watch \"npm run build:css\" ./src",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
