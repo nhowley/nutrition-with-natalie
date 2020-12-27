@@ -54,6 +54,13 @@ class SignUp extends Component {
             <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" onChange={this.handleChange}/>
             <p className="text-red-darker text-xs italic">Please choose a password.</p>
           </div>
+          {/* <div className="mb-6">
+            <label className="block text-grey text-sm font-bold mb-2" htmlFor="program">
+              Which program would you like to sign up for?
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-grey mb-3 leading-tight focus:outline-none focus:shadow-outline" id="program" type="program" placeholder="******************" onChange={this.handleChange}/>
+            <p className="text-red-darker text-xs italic">Please choose a password.</p>
+          </div> */}
           <div className="flex items-center justify-between">
             <button className="bg-purple hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onClick={this.handleSubmit}>
               Sign Up

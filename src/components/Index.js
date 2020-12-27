@@ -138,15 +138,23 @@ class Home extends Component {
               <img className="purple-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_purple.png" />
               <div className="ml-4">
                 <p className="font-bold">You want to get healthier, fitter, and stronger — and stay that way for the rest of your life</p>
-                <p>This program is for people who want to lose weight and body fat, build physical strength and confidence, get results that last, and get off the diet roller-coaster once and for all. I won’t give you a crazy diet or exercise program to follow; instead, I’ll help you build habits that will get you results that last forever.</p>
+                {/* <p>This program is for people who want to lose weight and body fat, build physical strength and confidence, get results that last, and get off the diet roller-coaster once and for all. I won’t give you a crazy diet or exercise program to follow; instead, I’ll help you build habits that will get you results that last forever.</p> */}
               </div>
             </div>
 
             <div className="flex mt-4">
               <img className="purple-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_purple.png" />
               <div className="ml-4">
-                <p className="font-bold">You’re tired of “quick fix” programs and are willing to dedicate 12 months to getting in shape the sustainable way</p>
-                <p>If you’ve tried something before and “failed” — or just can’t stick with it — know that you’re not alone. And it’s not your fault. After all, self-directed training and nutrition programs fail 98 percent of the time. Not to mention, after many years in the fitness industry, I’ve seen dozens of diet and exercise fads come and go. That’s why I don’t follow fads. Instead, I’ll teach you doable daily actions that are designed to fit into a busy lifestyle. Bottom line: I’ll help you make fitness and nutrition a part of your life, without it taking over.</p>
+                <p className="font-bold">Your goal is to lose weight, build muscle, improve health or optimize sports performance</p>
+                {/* <p>This program is for people who want to lose weight and body fat, build physical strength and confidence, get results that last, and get off the diet roller-coaster once and for all. I won’t give you a crazy diet or exercise program to follow; instead, I’ll help you build habits that will get you results that last forever.</p> */}
+              </div>
+            </div>
+
+            <div className="flex mt-4">
+              <img className="purple-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_purple.png" />
+              <div className="ml-4">
+                <p className="font-bold">You’re tired of “quick fix” programs and are willing to dedicate time to getting in shape the sustainable way</p>
+                {/* <p>If you’ve tried something before and “failed” — or just can’t stick with it — know that you’re not alone. And it’s not your fault. After all, self-directed training and nutrition programs fail 98 percent of the time. Not to mention, after many years in the fitness industry, I’ve seen dozens of diet and exercise fads come and go. That’s why I don’t follow fads. Instead, I’ll teach you doable daily actions that are designed to fit into a busy lifestyle. Bottom line: I’ll help you make fitness and nutrition a part of your life, without it taking over.</p> */}
               </div>
             </div>
 
@@ -154,7 +162,7 @@ class Home extends Component {
               <img className="purple-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_purple.png" />
               <div className="ml-4">
                 <p className="font-bold">You want an expert to hold you accountable and keep you consistent through the program</p>
-                <p>Nothing worth doing can be done alone. That’s why I work closely with my clients to help them eat well and exercise, no matter what other craziness is going on in their lives. You’re busy and have enough to worry about; let me take care of the fitness and nutrition details so you don’t have to.</p>
+                {/* <p>Nothing worth doing can be done alone. That’s why I work closely with my clients to help them eat well and exercise, no matter what other craziness is going on in their lives. You’re busy and have enough to worry about; let me take care of the fitness and nutrition details so you don’t have to.</p> */}
               </div>
             </div>
 
@@ -171,15 +179,11 @@ class Home extends Component {
                 <p className="price text-center text-xl mt-4">€50/month</p>
                 <div className="flex mt-4 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
-                  <p className="ml-2">A personalized nutrition program and lifestyle coaching</p>
+                  <p className="ml-2">A personalized nutrition program</p>
                 </div>
                 <div className="flex mt-2 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
-                  <p className="ml-2">A 20 minute call with me each month and daily email contact</p>
-                </div>
-                <div className="flex mt-2 items-center">
-                  <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
-                  <p className="ml-2">Daily help with the habits you're working on</p>
+                  <p className="ml-2">Daily tracking of the habits you're working on</p>
                 </div>
                 <div className="flex mt-2 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
@@ -191,11 +195,17 @@ class Home extends Component {
                 </div>
                 <div className="flex mt-2 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
-                  <p className="ml-2">More resources acording to your needs</p>
+                  <p className="ml-2">Delivered on a premium, easy-to-use platform you can take with you anywhere.</p>
                 </div>
+              </div>
+              <div className="price-plan">
+                <p className="text-3xl text-center">Nutrition Only PLUS</p>
+                <p className="price text-center text-xl mt-4">€80/month</p>
+                <br/>
+                <p>Everything in the basic nutrition plan PLUS</p>
                 <div className="flex mt-2 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
-                  <p className="ml-2">Delivered on a premium, easy-to-use platform you can take with you anywhere.</p>
+                  <p className="ml-2">A personal nutrition coach to review and track your progress.</p>
                 </div>
               </div>
               <div className="price-plan">
@@ -217,6 +227,16 @@ class Home extends Component {
                 <div className="flex mt-4 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
                   <p className="ml-2">Workouts adjusted for injuries</p>
+                </div>
+              </div>
+              <div className="price-plan">
+                <p className="text-3xl text-center">Nutrition and Exercise PLUS</p>
+                <p className="price text-center text-xl mt-4">€100/month</p>
+                <br/>
+                <p>Everything in the basic nutrition and exercise plan PLUS</p>
+                <div className="flex mt-2 items-center">
+                  <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
+                  <p className="ml-2">A personal nutrition coach to review and track your progress.</p>
                 </div>
                 <div className="flex mt-4 items-center">
                   <img className="blue-check" src="https://res.cloudinary.com/dnb2crtgo/image/upload/v1590505694/check_blue.png"/>
